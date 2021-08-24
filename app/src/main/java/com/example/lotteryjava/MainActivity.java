@@ -1,8 +1,6 @@
 package com.example.lotteryjava;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.widget.Button;
@@ -28,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int firstPartTicket = 0;
                 int secondPartTicket = 0;
-                //String numberTicket = Integer.toString(345765);
                 String numberTicket = edit.getText().toString();
 
                 if (numberTicket.length() != 6) {
@@ -43,11 +40,8 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     if (firstPartTicket == secondPartTicket) {
-                        //bulb.setBackgroundColor(Color.GREEN);
                         bulb.getBackground().setColorFilter(0xff00ff00, PorterDuff.Mode.MULTIPLY);
-                        //bulb.setBackgroundResource(R.drawable.circle);
                     } else {
-                        //bulb.setBackgroundColor(Color.RED);
                         bulb.getBackground().setColorFilter(0xffff0000, PorterDuff.Mode.MULTIPLY);
                     }
                 }
