@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">LotteryJava</string>
+    <string name="button">Розрахувати</string>
+    <string name="invalidLotteryTicket">Не коректний номер білету</string>
+    <string name="emptyMessage">""</string>
 </resources>
