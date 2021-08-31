@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.content.res.Resources;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
 
                     if (equalityTest(firstPartTicket, secondPartTicket, numberTicket)) {
                         bulb.getBackground().setColorFilter(getResources().getColor(R.color.green), PorterDuff.Mode.MULTIPLY);
-                        //bulb.getBackground().setColorFilter(0xff00ff00, PorterDuff.Mode.MULTIPLY);
                     } else {
                         bulb.getBackground().setColorFilter(getResources().getColor(R.color.red), PorterDuff.Mode.MULTIPLY);
                     }
